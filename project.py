@@ -24,7 +24,7 @@ def LE_sol(
         Polytropic index.
     squig : tuple[float, float], optional
         Interval of integration.
-    sample_num: int, optional
+    sample_num : int, optional
         Number of samples.
     tha0 : float, optional
         Initial value for theta.
@@ -76,8 +76,8 @@ def LE_plot(
     ----------
     index : tuple[float]
         Polytropic indexes.
-    squig : tuple[float]
-        Limits of integration, optional
+    squig : tuple[float], optional
+        Limits of integration.
     sample_num : int, optional
         Number of samples collected.
     tha0 : float, optional
