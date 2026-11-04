@@ -3,8 +3,12 @@ PH306 | Mini Project 3 - ODEs
 Functions to find numerical solutions of the Lane-Emden equation for a given
 polytropic index.
 """
-def main():
 
+
+def main():
+    """
+    Functions for Lane-Emden equation solutions.
+    """
     # --- Imports --- #
     import numpy as np
     from scipy.integrate import solve_ivp
