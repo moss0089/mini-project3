@@ -12,8 +12,6 @@ def main():
     from typing import Any
 
     # --- Numerical Solution --- #
-
-
     def LE_sol(
             index: float, squig: tuple[float, float] = (0., 10.),
             sample_num: int = 100, tha0: float = 1., phi0: float = 0.) -> Any:
@@ -65,8 +63,6 @@ def main():
         return sol
 
 # --- Plot Numerical Solutions --- #
-
-
     def LE_plot(
             index: tuple[float], squig: tuple[float, float] = (0., 10.),
             sample_num: int = 100, tha0: float = 1., phi0: float = 0.) -> Any:
@@ -113,5 +109,6 @@ def main():
         plt.show
         return fig
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     main()
