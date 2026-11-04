@@ -15,7 +15,7 @@ from typing import Any
 
 def LE_sol(
         index: float, squig: tuple[float, float] = (0., 10.),
-        sample_num: int = 50, tha0: float = 1., phi0: float = 0.) -> Any:
+        sample_num: int = 100, tha0: float = 1., phi0: float = 0.) -> Any:
     """ Finds numerical solution of Lane-Emden equation for given index.
 
     Parameters
@@ -68,7 +68,7 @@ def LE_sol(
 
 def LE_plot(
         index: tuple[float], squig: tuple[float, float] = (0., 10.),
-        sample_num: int = 50, tha0: float = 1., phi0: float = 0.) -> Any:
+        sample_num: int = 100, tha0: float = 1., phi0: float = 0.) -> Any:
     """
     Plots numerical solutions to Lane-Emden equation.
 
@@ -111,3 +111,7 @@ def LE_plot(
 
     plt.show
     return fig
+
+if __name__=='__main__':
+    indexes = (0, 1, 2, 3, 4, 5)
+    LE_plot(indexes)
